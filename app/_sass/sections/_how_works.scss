@@ -282,7 +282,9 @@
 			font-size: .8em;
 		}
 		&__get-button{
-			right: 30px;
+			right: auto;
+			left: auto;
+			margin: auto;
 			padding: 10px 30px;
 
 			&:before{
