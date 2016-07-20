@@ -2762,7 +2762,8 @@ th {
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  overflow-x: hidden; }
 
 .img-collor {
   fill: red; }
@@ -3339,7 +3340,9 @@ body {
     .how-we-works__text {
       font-size: .8em; }
     .how-we-works__get-button {
-      right: 30px;
+      right: auto;
+      left: auto;
+      margin: auto;
       padding: 10px 30px; }
       .how-we-works__get-button:before {
         height: 40px; } }
