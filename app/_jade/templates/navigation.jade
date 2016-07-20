@@ -1,0 +1,9 @@
+nav.nav
+	a(href="#").nav__trigger
+		-for(var i=3; i; i--)
+			i.nav__trigger-icon
+	ul.nav__list
+		-var items = {about:'О НАС', how_we_works:'КАК МЫ РАБОТАЕМ', offer:'МЫ ПРЕДЛАГАЕМ', routes:'НАШИ НАПРАВЛЕНИЯ', type_of_transport:'ВИДЫ ТАРНСПОРТА',feedback:'КОНСУЛЬТАЦИИ', clients:'НАС ВЫБИРАЮТ'};
+		each val, index in items
+			li.nav__item
+				a(href="##{index}").nav__link #{val}

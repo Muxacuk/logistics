@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300&subset=latin,cyrillic);
+@import	"common/mixins";
+@import	"plugins/animate";
+@import	"common/variables";
+@import	"widgets/button";
+
+@import	"common/normalize";
+
+@import	"common/spriteSvg";
+
+
+
+@import	"common/misc";
+
+@import "sections/header";
+@import 'sections/slider';
+@import 'sections/about';
+@import 'sections/how_works';
+@import 'sections/offer';
+@import 'sections/routes';
+@import 'sections/type_of_transport';
+@import 'sections/feedback';
+@import 'sections/clients';
+@import "sections/footer";

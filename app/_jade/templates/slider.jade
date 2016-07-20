@@ -1,0 +1,12 @@
+section.slider
+	ul.slider__list.carousel
+		-for(var i = 0; i<3; i++)
+			li.slider__item.carousel-cell
+				img(src="img/slide#{i+1}.jpg", alt="best transports company")
+	.slider__cover.container
+		.slider__text
+			p ДОСТАВКА ГРУЗОВ ПО ВСЕМ <br>НАПРАВЛЕНИЯМ ОТ ДВЕРИ ДО ДВЕРИ
+			p(style="color: red; font-weight: bold;") НАШИ ЦЕНЫ НИЖЕ РЫНОЧНЫХ
+		.slider__price-count
+			span.slider__price-count-text Узнайте стоимость доставки вашего груза!
+			a(href="#").slider__price-count-button Рассчитать

@@ -1,0 +1,44 @@
+.clients{
+	padding: 115px 10px;
+	text-align: center;
+
+	&__title{
+		text-align: center;
+		margin: 0px;
+		font-size: 1.75em;
+	}
+	&__list{
+		margin-top: 55px;
+		display: flex;
+		padding: 0px;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__item{
+		list-style: none;
+		max-width: 100%;
+		padding: 5px;
+		text-align: center;
+		margin: auto;
+
+		img{
+			max-width: 100%;
+			margin: auto;
+			display: inline-block;
+		}
+	}
+	&__get-button{
+		margin: 75px auto 0;
+	}
+}
+
+@media only screen and (max-width: 900px){
+	.clients{
+		padding: 35px 5px; 
+		
+		&__get-button{
+			margin-top: 40px;
+		}
+	}
+}

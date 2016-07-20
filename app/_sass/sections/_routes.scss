@@ -1,0 +1,43 @@
+.routes{
+	background-image: url(../pictures/routes_bg.jpg);
+	background-size: cover;
+	min-height: 900px;
+	position: relative;
+	text-align: center;
+	
+	&__title{
+		display: inline-block;
+		margin: auto;
+		padding: 40px 160px;
+		max-width: 100%;
+		font-size: 1.5em;
+		background-color: rgba(255,255,255,.7);
+	}
+	&__button-cover{
+		background-color: rgba(255,255,255,.8);
+		position: absolute;
+		bottom: 0px;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: 30px 80px;
+		border-radius: 5px 5px 0 0;
+	}
+	&__button{
+		font-size: 1.3em;
+		padding: 14px 75px;
+	}
+}
+@media only screen and (max-width: 900px){
+	.routes{
+		&__title{
+			padding: 20px 40px;
+		}
+		&__button{
+			padding: 20px 30px;
+			font-size: 1.2em;
+		}
+		&__button-cover{
+			padding: 20px 30px;
+		}
+	}
+}

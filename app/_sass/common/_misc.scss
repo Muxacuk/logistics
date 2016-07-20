@@ -1,0 +1,26 @@
+.icon{
+	font-size: 1em;
+
+	&_red{
+		color: #92241F;
+	}
+	&_grey{
+		color: #717170;
+	}
+}
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+.img-collor{
+	fill: red;
+}
+.container{
+	max-width: 1160px;
+	padding: 0 10px;
+	margin: auto;
+}
+

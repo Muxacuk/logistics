@@ -1,0 +1,11 @@
+section#offer.we-offer
+	.container
+		h2  МЫ ПРЕДЛАГАЕМ
+		ul
+			-for(var i = 0; i<6; i++)
+				li(class= (i%2 != 0)?'bounceInRight':'bounceInLeft' data-wow-duration="2s").wow
+					img(src="img/offer_picture#{i+1}.svg", alt="text")
+					h3 ПРОФЕССИОНАЛЬНЫЕ КОНСУЛЬТАЦИИ ПО ОРГАНИЗАЦИИ ЛЮБОЙ ПЕРЕВОЗКИ
+					p от 1 паллеты до большого негабаритного груза весом в десятки тонн
+		a(href="#" data-wow-duration="2s").we-offer__get-button.transparent-button.wow.flipInX Хочу сотрудничать
+		span(data-wow-duration="2s").we-offer__subtext.wow.slideInUp заполние пожалуйста заявку и с Вами свяжется менеджер

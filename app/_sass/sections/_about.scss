@@ -1,0 +1,33 @@
+.about{
+	background-image: url(../pictures/about_bg.jpg);
+	background-size: cover;
+	padding: 30px;
+	.container{
+		border: 5px solid #6A9CBD;
+		border-radius: 10px;
+		background-color: rgba(255,255,255,.5);
+		padding: 50px;
+
+		h2{
+			margin-top: 5px;
+			text-align: center;
+		}
+		p{
+			text-align: justify;
+			margin-top: 25px;
+			font-size: 1.225em;
+			line-height: 1.3em;
+		}
+	}
+}
+@media only screen and (max-width: 500px){
+	.about{
+		.container{
+			padding: 20px;
+		}
+
+		p{
+			font-size: 1em;
+		}
+	}
+}

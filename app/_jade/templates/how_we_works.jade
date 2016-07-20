@@ -1,0 +1,11 @@
+section#how_we_works.how-we-works
+	.container
+		h2 КАК МЫ РАБОТАЕМ
+		ul.how-we-works__list.wow
+			-var items = ['Вы оставляее заявку на сайти или звние нам в офис', "Наши сотрдуники делают расчет стоимтость доставки груза, согласно Вашего запроса", "Мы заключаем с Вами договор на транспортные услуги", "Мы осуществляем подучу транспорта и доставку Вашего груза", "Груз доставлнен вовреия и Вы остаетесь довольны нашей работой!"];
+			-for(var i = 0; i<5; i++)
+				li(data-wow-duration="1s" data-wow-delay="#{0.4*i}s").how-we-works__item.wow.fadeIn
+					span.how-we-works__item-nomber #{i+1}
+					img(src="img/how_we_works_picture#{i+1}.svg", alt="")
+					span.how-we-works__text #{items[i]}
+		a(href="#" data-wow-delay="2.4s").how-we-works__get-button.wow.bounceIn Оставить заявку

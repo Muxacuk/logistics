@@ -1,0 +1,8 @@
+section#clients.clients
+	.container
+		h2.clients__title НАС ВЫБИРАЮТ
+		ul.clients__list
+			-for(var i=0; i<9; i++)
+				li.clients__item.fadeInUp.wow
+					img(src="img/client#{i+1}.png", alt="clients")
+		a(href="#").clients__get-button.transparent-button Оставить заявку

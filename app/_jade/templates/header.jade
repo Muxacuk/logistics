@@ -1,0 +1,22 @@
+header.header
+	.header__top
+		.container
+			.header__logo-title
+				.logo.header__logo
+					img(src="img/logo.svg", alt="Universe Logistics LLC").logo__img
+				h1.header__title 
+					b Uniberse <br> Logistics 
+					| LLC
+			.tagline
+				span.tagline__main ТРАНСПОРТНАЯ КОМПАНИЯ
+				span.tagline__tags
+					-var tags = ['БЕЗОПАСНОСТЬ','НАДЕЖНОСТЬ','КОМПЛЕКСНЫЕ РЕШЕНИЯ'];
+					each tag in tags
+						span.tagline__tag #{tag}
+			.contacts.contacts_red-icons
+				include contacts
+	.header__bottom
+		.container
+			include navigation
+				
+
