@@ -3601,7 +3601,8 @@ section {
     height: 430px;
     padding: 70px 8%;
     color: white;
-    position: relative; }
+    position: relative;
+    transition: 1.5s; }
     .type-of-transport__item * {
       position: relative;
       z-index: 1; }
@@ -3631,14 +3632,12 @@ section {
           left: -10px; }
     .type-of-transport__item:nth-child(1) {
       background-image: url(../pictures/type_auto.jpg);
-      background-position: -200px -100px;
-      transition: 3s; }
+      background-position: -200px -100px; }
       .type-of-transport__item:nth-child(1):hover {
         background-position: -130px -100px; }
     .type-of-transport__item:nth-child(2) {
       background-image: url(../pictures/type_ship.jpg);
-      background-position: -200px -200px;
-      transition: 3s; }
+      background-position: -200px -200px; }
       .type-of-transport__item:nth-child(2):hover {
         background-position: -130px -150px; }
       .type-of-transport__item:nth-child(2):after {
@@ -3646,20 +3645,24 @@ section {
     .type-of-transport__item:nth-child(3) {
       background-image: url(../pictures/type_plane.jpg);
       background-position: -400px -250px;
-      background-size: 1300px;
-      transition: 3s; }
+      background-size: 1300px; }
       .type-of-transport__item:nth-child(3):hover {
         background-position: -380px -230px; }
       .type-of-transport__item:nth-child(3):after {
         background-color: rgba(136, 178, 210, 0.6); }
     .type-of-transport__item:nth-child(4) {
       background-image: url(../pictures/type_train.jpg);
-      background-position: 0px -230px;
-      transition: 3s; }
+      background-position: 0px -230px; }
       .type-of-transport__item:nth-child(4):hover {
         background-position: -50px -220px; }
       .type-of-transport__item:nth-child(4):after {
         background-color: rgba(154, 40, 33, 0.7); }
+    .type-of-transport__item:hover .type-of-transport__link {
+      background-color: #D02124;
+      border: none;
+      padding: 11px 21px; }
+      .type-of-transport__item:hover .type-of-transport__link:hover {
+        background-color: #de2d30; }
   .type-of-transport__link {
     font-size: 1.3125em;
     color: white;
@@ -3670,10 +3673,6 @@ section {
     border: 1px solid white;
     border-radius: 5px;
     text-align: center; }
-    .type-of-transport__link:hover {
-      background-color: #D02124;
-      border: none;
-      padding: 11px 21px; }
   .type-of-transport__subtext {
     text-align: center;
     display: block;

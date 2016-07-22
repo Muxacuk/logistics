@@ -23,6 +23,7 @@
 		padding: 70px 8%;
 		color: white;
 		position: relative;
+		transition: 1.5s;
 		*{
 			position: relative;
 			z-index: 1;
@@ -62,7 +63,6 @@
 		&:nth-child(1){
 			background-image: url(../pictures/type_auto.jpg);
 			background-position: -200px -100px;
-			transition: 3s;
 			&:hover{
 				background-position: -130px -100px;
 			}
@@ -70,7 +70,6 @@
 		&:nth-child(2){
 			background-image: url(../pictures/type_ship.jpg);
 			background-position: -200px -200px;
-			transition: 3s;
 			&:hover{
 				background-position: -130px -150px;
 			}
@@ -82,7 +81,6 @@
 			background-image: url(../pictures/type_plane.jpg);
 			background-position: -400px -250px;
 			background-size: 1300px;
-			transition: 3s;
 			&:hover{
 				background-position: -380px -230px;
 			}
@@ -93,12 +91,20 @@
 		&:nth-child(4){
 			background-image: url(../pictures/type_train.jpg);
 			background-position: 0px -230px;
-			transition: 3s;
 			&:hover{
 				background-position: -50px -220px;
 			}
 			&:after{
 				background-color: rgba(154,40,33,0.7);
+			}
+		}
+		&:hover .type-of-transport__link{
+			background-color: $red;
+			border: none;
+			padding: 11px 21px;
+
+			&:hover{
+				background-color: lighten($red,5%);
 			}
 		}
 	}
@@ -112,13 +118,8 @@
 		border: 1px solid white;
 		border-radius: 5px;
 		text-align: center;
-		&:hover{
-			background-color: $red;
-			border: none;
-			padding: 11px 21px;
-		}
-
 	}
+
 	&__subtext{
 		text-align: center;
 		display: block;
