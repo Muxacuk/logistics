@@ -20,19 +20,30 @@ var nav = (function (){
 			$('.nav__trigger').click();
 
 		})
-		$(window).on('scroll',function (event) {
-			if($('body').scrollTop() < 100){
-				$('.header__bottom').css('position','static');
+		$(window).on('scroll resize',function (event) {
+			var header = $('.header__bottom'),
+				headerHeight =  $('.header__top').height(),
+				scrollTop = $('body').scrollTop();
+
+			if(scrollTop < headerHeight){
+				header.css('top', headerHeight-scrollTop+10)
+				header.removeClass('header__bottom_small');
 			}else{
-				$('.header__bottom').css('position','fixed');
+				header.addClass('header__bottom_small');
+				header.css('top', 0);
 			}
 		});
 		$(document).ready(function (event) {
-			console.log('ready');
-			if($('body').scrollTop() < 100){
-				$('.header__bottom').css('position','static');
+			var header = $('.header__bottom'),
+				headerHeight =  $('.header__top').height(),
+				scrollTop = $('body').scrollTop();
+
+			if(scrollTop < headerHeight){
+				header.css('top', headerHeight-scrollTop+10);
+				header.removeClass('header__bottom_small');
 			}else{
-				$('.header__bottom').css('position','fixed');
+				header.addClass('header__bottom_small');
+				header.css('top', 0);
 			}
 		});
 	}

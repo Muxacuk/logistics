@@ -6,17 +6,23 @@
 		border: 5px solid #6A9CBD;
 		border-radius: 10px;
 		background-color: rgba(255,255,255,.5);
-		padding: 50px;
+		padding: 33px;
+		max-width: 787px;
 
 		h2{
 			margin-top: 5px;
+			font-size: 1.8em;
 			text-align: center;
+			margin-bottom: 10px;
 		}
 		p{
 			text-align: justify;
-			margin-top: 25px;
+			margin-top: 22px;
 			font-size: 1.225em;
 			line-height: 1.3em;
+			&:first-of-type{
+				margin-top: 17px;
+			}
 		}
 	}
 }

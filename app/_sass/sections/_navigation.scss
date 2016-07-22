@@ -14,23 +14,23 @@
 	&__link{
 		color: #5596BF;
 		font-weight: bold;
-		font-size: 1.125em;
+		font-size: 1.175em;
 
 		&:hover{
 			color: $red;
 		}
 	}
 }
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1130px) {
 
-	.nav{
-		font-size: 0.9em;
+	.nav__item{
+		font-size: 0.85em;
 	}
 }
 @media only screen and (max-width: 930px){
-	.nav{
+	.nav__item{
 
-		font-size: 0.8em;
+		font-size: 0.75em;
 	}
 }
 

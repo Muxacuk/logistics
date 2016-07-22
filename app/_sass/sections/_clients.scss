@@ -30,6 +30,7 @@
 	}
 	&__get-button{
 		margin: 75px auto 0;
+		padding: 15px 150px;
 	}
 }
 
@@ -39,6 +40,17 @@
 		
 		&__get-button{
 			margin-top: 40px;
+			padding: 15px 75px;
+		}
+	}
+}
+@media only screen and (max-width: 400px){
+	.clients{
+
+		
+		&__get-button{
+			margin-top: 40px;
+			padding: 15px 25px;
 		}
 	}
 }
