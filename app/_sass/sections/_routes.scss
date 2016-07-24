@@ -26,6 +26,14 @@
 		font-size: 1.3em;
 		padding: 14px 90px;
 	}
+	&__list{
+		max-width: 500px;
+		margin: auto;
+		text-align: left;
+		li{
+			list-style: none;
+		}
+	}
 }
 @media only screen and (max-width: 900px){
 	.routes{

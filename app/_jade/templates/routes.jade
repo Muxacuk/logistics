@@ -2,6 +2,8 @@ section#routes.routes
 	.container
 		h2.routes__title НАШИ НАПРАВЛЕНИЯ
 		ul.routes__list
-			li
+			-var countrys = ['Украина',"Россия","Турция","Испания","Швеция","Латвия","Германия","Италия","Польша","Румыния","Беларусия","Болгария","Швейцария","Эстония","Литва","Молдова","ОАЭ","Греция","Болгария"];
+			-each country in countrys
+				li= country
 		.routes__button-cover
 			a(href="#").routes__button.transparent-button Узнать цену по направлению
