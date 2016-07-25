@@ -18,13 +18,11 @@ var nav = (function (){
 			var top = $(this.hash).offset().top;
 			$('body').animate({scrollTop: top-35},1000);
 			$('.nav__trigger').click();
-
 		});
 		function menuFix (event){
 			var header = $('.header__bottom'),
 				headerHeight =  $('.header__top').height(),
-				scrollTop = event.originalEvent.pageY || $(document).scrollTop(); // scrollTop dont work in Mozilla
-
+				scrollTop = ('pageY' in event.originalEvent)? event.originalEvent.pageY : $(document).scrollTop(); // scrollTop dont work in Mozilla
 			if(scrollTop < headerHeight){
 				header.css('top', headerHeight-scrollTop+10)
 				header.removeClass('header__bottom_small');
@@ -34,7 +32,18 @@ var nav = (function (){
 			}
 		}
 		$(window).on('scroll resize',menuFix);
-		$(document).ready(menuFix);
+		$(document).ready(function (event){
+			var header = $('.header__bottom'),
+				headerHeight =  $('.header__top').height(),
+				scrollTop = $(document).scrollTop(); // scrollTop dont work in Mozilla
+			if(scrollTop < headerHeight){
+				header.css('top', headerHeight-scrollTop+10)
+				header.removeClass('header__bottom_small');
+			}else{
+				header.addClass('header__bottom_small');
+				header.css('top', 0);
+			}
+		});
 	}
 
 	returned.init = function (){
