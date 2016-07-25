@@ -3549,8 +3549,8 @@ section {
 .routes {
   background-image: url(../pictures/routes_bg.svg);
   background-size: cover;
-  min-height: 900px;
   position: relative;
+  padding-bottom: 150px;
   text-align: center; }
   .routes__title {
     display: inline-block;
@@ -3572,10 +3572,16 @@ section {
     padding: 14px 90px; }
   .routes__list {
     max-width: 500px;
-    margin: auto;
-    text-align: left; }
-    .routes__list li {
-      list-style: none; }
+    margin: 70px auto;
+    text-align: left;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px 40px; }
+  .routes__item {
+    font-size: 1.3em;
+    width: 49%;
+    text-align: center;
+    display: inline-block; }
 
 @media only screen and (max-width: 900px) {
   .routes__title {
@@ -3585,6 +3591,118 @@ section {
     font-size: 1.2em; }
   .routes__button-cover {
     padding: 20px 30px; } }
+
+@media only screen and (max-width: 400px) {
+  .routes__title {
+    padding: 20px 40px; }
+  .routes__button {
+    padding: 20px 30px;
+    font-size: 1.2em; }
+  .routes__button-cover {
+    padding: 20px 30px; }
+  .routes__list {
+    padding: 10px 0px; } }
+
+@media only screen and (min-width: 1300px) {
+  .routes {
+    min-height: 900px; }
+    .routes__list {
+      background-color: transparent; }
+    .routes__item {
+      list-style: none;
+      position: absolute;
+      font-size: 1em;
+      width: auto;
+      text-align: left; }
+      .routes__item:nth-child(1) {
+        top: 400px;
+        left: 540px;
+        color: white; }
+      .routes__item:nth-child(2) {
+        top: 200px;
+        left: 840px;
+        font-size: 2em; }
+      .routes__item:nth-child(3) {
+        top: 550px;
+        left: 600px;
+        color: white; }
+      .routes__item:nth-child(4) {
+        top: 530px;
+        left: 160px; }
+      .routes__item:nth-child(5) {
+        top: 220px;
+        left: 352px;
+        color: white; }
+      .routes__item:nth-child(6) {
+        top: 250px;
+        left: 470px;
+        font-size: .7em;
+        transform: rotateZ(35deg); }
+      .routes__item:nth-child(7) {
+        top: 282px;
+        left: 477px;
+        font-size: .7em; }
+      .routes__item:nth-child(8) {
+        top: 302px;
+        left: 465px;
+        font-size: .7em; }
+      .routes__item:nth-child(9) {
+        top: 365px;
+        left: 305px; }
+      .routes__item:nth-child(10) {
+        top: 465px;
+        left: 305px;
+        color: white; }
+      .routes__item:nth-child(11) {
+        top: 365px;
+        left: 405px; }
+      .routes__item:nth-child(12) {
+        top: 450px;
+        left: 465px; }
+      .routes__item:nth-child(13) {
+        top: 335px;
+        left: 485px;
+        font-size: 0.93em; }
+      .routes__item:nth-child(14) {
+        top: 500px;
+        left: 490px;
+        font-size: 0.65em; }
+      .routes__item:nth-child(15) {
+        top: 444px;
+        left: 290px;
+        font-size: 0.65em;
+        font-weight: bold; }
+      .routes__item:nth-child(16) {
+        top: 431px;
+        left: 517px;
+        transform: rotateZ(40deg);
+        font-size: 0.6em;
+        font-weight: bold; }
+      .routes__item:nth-child(17) {
+        top: 762px;
+        left: 850px; }
+      .routes__item:nth-child(18) {
+        top: 558px;
+        left: 455px;
+        transform: rotateZ(34deg);
+        font-size: 0.6em;
+        font-weight: bold; }
+      .routes__item:nth-child(19) {
+        top: 435px;
+        left: 220px; }
+      .routes__item:nth-child(20) {
+        top: 400px;
+        left: 950px;
+        font-size: 1.5em; }
+      .routes__item:nth-child(21) {
+        top: 550px;
+        left: 1200px;
+        font-size: 1.5em;
+        color: white; }
+      .routes__item:nth-child(22) {
+        top: 750px;
+        left: 1100px;
+        font-size: 1.5em; } }
 
 .type-of-transport {
   padding: 85px; }

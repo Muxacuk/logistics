@@ -1,8 +1,8 @@
 .routes{
 	background-image: url(../pictures/routes_bg.svg);
 	background-size: cover;
-	min-height: 900px;
 	position: relative;
+	padding-bottom: 150px;
 	text-align: center;
 	
 	&__title{
@@ -28,12 +28,19 @@
 	}
 	&__list{
 		max-width: 500px;
-		margin: auto;
+		margin: 70px auto;
 		text-align: left;
-		li{
-			list-style: none;
-		}
+		border-radius: 5px;
+		background-color: rgba(255,255,255,.7);
+		padding: 20px 40px;
 	}
+	&__item{
+		font-size: 1.3em;
+		width:49%; 
+		text-align: center;
+		display: inline-block;
+	}
+	
 }
 @media only screen and (max-width: 900px){
 	.routes{
@@ -48,4 +55,148 @@
 			padding: 20px 30px;
 		}
 	}
+}
+@media only screen and (max-width: 400px){
+	.routes{
+		&__title{
+			padding: 20px 40px;
+		}
+		&__button{
+			padding: 20px 30px;
+			font-size: 1.2em;
+		}
+		&__button-cover{
+			padding: 20px 30px;
+		}
+		&__list{
+			padding: 10px 0px;
+		}
+	}
+}
+@media only screen and (min-width: 1300px) {
+	.routes{
+		min-height: 900px;
+		&__list{
+			background-color: transparent;
+		}
+		&__item{
+			list-style: none;
+			position: absolute;	
+			font-size: 1em; 
+			width: auto;
+			text-align: left;
+
+			&:nth-child(1){
+				top: 400px; 
+				left: 540px;
+				color: white;
+			}
+			&:nth-child(2){
+				top: 200px; 
+				left: 840px;
+				font-size: 2em;
+			}
+			&:nth-child(3){
+				top: 550px; 
+				left: 600px;
+				color: white;
+			}
+			&:nth-child(4){
+				top: 530px; 
+				left: 160px;
+			}
+			&:nth-child(5){
+				top: 220px; 
+				left: 352px;
+				color: white;
+			}
+			&:nth-child(6){
+				top: 250px; 
+				left: 470px;
+				font-size: .7em;
+				transform: rotateZ(35deg);
+			}
+			&:nth-child(7){
+				top: 282px; 
+				left: 477px;
+				font-size: .7em;
+			}
+			&:nth-child(8){
+				top: 302px; 
+				left: 465px;
+				font-size: .7em;
+			}
+			&:nth-child(9){
+				top: 365px; 
+				left: 305px;
+			}
+			&:nth-child(10){
+				top: 465px; 
+				left: 305px;
+				color: white;
+			}
+			&:nth-child(11){
+				top: 365px; 
+				left: 405px;
+			}
+			&:nth-child(12){
+				top: 450px; 
+				left: 465px;
+			}
+			&:nth-child(13){
+				top: 335px; 
+				left: 485px;
+				font-size: 0.93em;
+			}
+			&:nth-child(14){
+				top: 500px; 
+				left: 490px;
+				font-size: 0.65em;
+			}
+			&:nth-child(15){
+				top: 444px; 
+				left: 290px;
+				font-size: 0.65em;
+				font-weight: bold;
+			}
+			&:nth-child(16){
+				top: 431px; 
+				left: 517px;
+				transform: rotateZ(40deg);
+				font-size: 0.6em;
+				font-weight: bold;
+			}
+			&:nth-child(17){
+				top: 762px; 
+				left: 850px;
+			}
+			&:nth-child(18){
+				top: 558px; 
+				left: 455px;
+				transform: rotateZ(34deg);
+				font-size: 0.6em;
+				font-weight: bold;
+			}
+			&:nth-child(19){
+				top: 435px; 
+				left: 220px;
+			}
+			&:nth-child(20){
+				top: 400px; 
+				left: 950px;
+				font-size: 1.5em;
+			}
+			&:nth-child(21){
+				top: 550px; 
+				left: 1200px;
+				font-size: 1.5em;
+				color: white;
+			}
+			&:nth-child(22){
+				top: 750px; 
+				left: 1100px;
+				font-size: 1.5em;
+			}
+		}
+	}	
 }
