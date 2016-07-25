@@ -16,7 +16,7 @@ var nav = (function (){
 		$('.nav__link').on('click touch',function (event){
 			event.preventDefault();
 			var top = $(this.hash).offset().top;
-			$('body').animate({scrollTop: top-35},1000);
+			$('body,html').stop(true,true).animate({scrollTop: top-35},1000);
 			$('.nav__trigger').click();
 		});
 		function menuFix (event){
