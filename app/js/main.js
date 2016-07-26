@@ -24,7 +24,7 @@ var nav = (function (){
 				headerHeight =  $('.header__top').height(),
 				scrollTop = ('pageY' in event.originalEvent)? event.originalEvent.pageY : $(document).scrollTop(); // scrollTop dont work in Mozilla
 			if(scrollTop < headerHeight){
-				header.css('top', headerHeight-scrollTop+10)
+				header.css('top', headerHeight-scrollTop)
 				header.removeClass('header__bottom_small');
 			}else{
 				header.addClass('header__bottom_small');
@@ -37,7 +37,7 @@ var nav = (function (){
 				headerHeight =  $('.header__top').height(),
 				scrollTop = $(document).scrollTop(); // scrollTop dont work in Mozilla
 			if(scrollTop < headerHeight){
-				header.css('top', headerHeight-scrollTop+10)
+				header.css('top', headerHeight-scrollTop)
 				header.removeClass('header__bottom_small');
 			}else{
 				header.addClass('header__bottom_small');

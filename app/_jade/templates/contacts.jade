@@ -3,6 +3,6 @@ ul.contacts__list
 	each item in contacts
 		each val,index in item
 			li.contacts__item
-				a(href="#").contacts__link
+				a(href="tel:#{val}").contacts__link
 					+icon(index,'red')
 					span.contacts__nomber= val
