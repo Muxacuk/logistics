@@ -1,8 +1,7 @@
 ul.contacts__list
-	-var contacts = [{mobile:'+38 (067) 323 55 81'},{mobile:'+38 (067) 474 72 78'},{telephone:'+38 (047) 462 59 16'}];
+	-var contacts = [['mobile', '+38 (067) 323 55 81', '+380673235581'],['mobile', '+38 (067) 474 72 78', '+380674747278'],['telephone','+38 (047) 462 59 16', '+380474625916']]
 	each item in contacts
-		each val,index in item
-			li.contacts__item
-				a(href="tel:#{val}").contacts__link
-					+icon(index,'red')
-					span.contacts__nomber= val
+		li.contacts__item
+			a(href="tel:#{item[2]}").contacts__link
+				+icon(item[0],'red')
+				span.contacts__nomber= item[1]
