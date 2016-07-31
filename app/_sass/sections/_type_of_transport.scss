@@ -27,17 +27,21 @@
 		*{
 			position: relative;
 			z-index: 1;
+			transition: 1s;
 		}
 		&:after{
 			content: '';
 			position: absolute;
 			top: 0px;
+			transition: 1s;
 			left: 0;
 			height: 100%;
 			width: 100%;
 			background-color: rgba(84,123,157,0.7);
 		}
-
+		&:hover:after{
+			opacity: 0;
+		}
 		h3{
 			font-size: 1.75em;
 			font-weight: normal;
@@ -64,14 +68,15 @@
 			background-image: url(../pictures/type_auto.jpg);
 			background-position: -200px -100px;
 			&:hover{
-				background-position: -130px -100px;
+				background-position: -180px -100px;
 			}
 		}
 		&:nth-child(2){
 			background-image: url(../pictures/type_ship.jpg);
 			background-position: -200px -200px;
+			background-size: 800px 700px;
 			&:hover{
-				background-position: -130px -150px;
+				background-position: -180px -170px;
 			}
 			&:after{
 				background-color: rgba(67,131,178,0.6);
@@ -98,13 +103,20 @@
 				background-color: rgba(154,40,33,0.7);
 			}
 		}
-		&:hover .type-of-transport__link{
-			background-color: $red;
-			border: none;
-			padding: 11px 21px;
+		&:hover{
+			*{
+				opacity: 0;
+			}
+			.type-of-transport__link{
+				opacity: 1;
+				background-color: $red;
+				border: none;
+				transition: .3s;
+				padding: 11px 21px;
 
-			&:hover{
-				background-color: lighten($red,5%);
+				&:hover{
+					background-color: lighten($red,5%);
+				}
 			}
 		}
 	}
@@ -128,6 +140,19 @@
 	}
 
 }
+@media only screen and (max-width: 1250px){
+	.type-of-transport{
+		&__item{
+			height: auto;
+			padding-top: 20px;
+		}
+
+		&__link{
+			font-size: 1em;
+		}
+	}
+	
+}
 @media only screen and (max-width: 925px){
 	.type-of-transport{
 		h3{
@@ -143,16 +168,24 @@
 	}
 	
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 900px) and (min-width: 630px){
+	.type-of-transport{
+		&__item,.type-of-transport__item:nth-child(2){
+			background-size: 150%;
+		}
+	}
+}
+@media only screen and (max-width: 900px){
 	.type-of-transport{
 		padding: 35px 0 35px;
 		h3{
 			font-size: 2em;
 			text-align: center;
 		}
-		&__item{
+		&__item,.type-of-transport__item:nth-child(2){
 			width: 100%;
 			height: auto;
+			
 		}
 		&__link{
 			display: block;

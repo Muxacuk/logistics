@@ -64,20 +64,37 @@
             <p>ДОСТАВКА ГРУЗОВ ПО ВСЕМ <br>НАПРАВЛЕНИЯМ ОТ ДВЕРИ ДО ДВЕРИ</p>
             <p style="color: red; font-weight: bold;">НАШИ ЦЕНЫ НИЖЕ РЫНОЧНЫХ</p>
           </div>
-          <div class="slider__price-count"><span class="slider__price-count-text">Узнайте стоимость доставки вашего груза!</span><a href="#" class="slider__price-count-button">Рассчитать</a></div>
+          <div class="slider__price-count"><span class="slider__price-count-text">Узнайте стоимость доставки вашего груза!</span><a href="#" class="slider__price-count-button popup__show">Рассчитать</a></div>
+        </div>
+        <div id="sliderPopup" class="slider__popup popup feedback">
+          <div class="popup__body">
+            <form action="#" method="post" class="slider__form feedback__form">
+              <input type="text" name="from" placeholder="Откуда забрать?"/>
+              <input type="text" name="to" placeholder="Куда доставить?"/>
+              <input type="number" name="weight" placeholder="Вес (кг)"/>
+              <input type="number" name="weight" placeholder="Объем (м2)"/>
+              <input type="text" name="name" placeholder="Имя Фамилия"/>
+              <input type="email" name="mail" placeholder="Ваш e-mail"/>
+              <input type="tel" name="phone" placeholder="Контактный телефон"/>
+              <div class="popup__buttons">
+                <button type="submit">Отправить запрос</button>
+                <button type="reset" class="popup__close">Отмена</button>
+              </div>
+            </form>
+          </div>
         </div>
       </header>
       <section id="about" class="about">
         <div class="container">
           <h2>15 ЛЕТ РАБОТЫ НА РЕЗУЛЬТАТ</h2>
-          <p class="bounceInRight wow"> Более пятнадцати лет группа компаний «Юниверс Логистика» предоставляет услуги перевозки, хранения, упаковки, таможенной очистки международных грузов на территории всего  Евразийского континента. </p>
-          <p class="bounceInLeft wow">За эти годы мы перевезли более 10 млн. тон грузов для более чем для 500  клиентов,  расположенных  во  многих странах Евразийского континента.</p>
-          <p class="bounceInRight wow"> Наши клиенты  это национальные  и международные компании, которые доверяют нам  быть частью своего бизнеса.   Оборудование,механизмы,   удобрения,  стройматериалы, товары широкого потребления  –  всего лишь часть того что мы доставляем  нашим клиентам. Часть наших клиентов представлена в разделе "Нас выбирают»</p>
-          <p class="bounceInLeft wow"> Опыт и знания, приобретенные нами за эти годы, трансформировались в профессионализм и эффективность нашей работы.  </p>
-          <p class="bounceInRight wow"> Мы имеем множество рекомендательных писем, в которых наши клиенты позитивно оценивают результаты нашего сотрудничества.</p>
-          <p class="bounceInLeft wow"> Основой нашей работы являются принципы:  Эффективность, безопасность, сотрудничество.</p>
-          <p class="bounceInRight wow"> В лице нашей компании Вы найдете надежного партнера, способного справиться с задачами любой сложности.</p>
-          <p class="bounceInLeft wow">Приглашаем Вас к сотрудничеству.</p>
+          <p data-wow-duration="2s" class="fadeIn wow"> Более пятнадцати лет группа компаний «Юниверс Логистика» предоставляет услуги перевозки, хранения, упаковки, таможенной очистки международных грузов на территории всего  Евразийского континента. </p>
+          <p data-wow-duration="2s" class="fadeIn wow">За эти годы мы перевезли более 10 млн. тон грузов для более чем для 500  клиентов,  расположенных  во  многих странах Евразийского континента.</p>
+          <p data-wow-duration="2s" class="fadeIn wow"> Наши клиенты  это национальные  и международные компании, которые доверяют нам  быть частью своего бизнеса.   Оборудование,механизмы,   удобрения,  стройматериалы, товары широкого потребления  –  всего лишь часть того что мы доставляем  нашим клиентам. Часть наших клиентов представлена в разделе "Нас выбирают»</p>
+          <p data-wow-duration="2s" class="fadeIn wow"> Опыт и знания, приобретенные нами за эти годы, трансформировались в профессионализм и эффективность нашей работы.  </p>
+          <p data-wow-duration="2s" class="fadeIn wow"> Мы имеем множество рекомендательных писем, в которых наши клиенты позитивно оценивают результаты нашего сотрудничества.</p>
+          <p data-wow-duration="2s" class="fadeIn wow"> Основой нашей работы являются принципы:  Эффективность, безопасность, сотрудничество.</p>
+          <p data-wow-duration="2s" class="fadeIn wow"> В лице нашей компании Вы найдете надежного партнера, способного справиться с задачами любой сложности.</p>
+          <p data-wow-duration="2s" class="fadeIn wow">Приглашаем Вас к сотрудничеству.</p>
         </div>
       </section>
       <section id="how_we_works" class="how-we-works">
@@ -89,7 +106,7 @@
             <li data-wow-duration="1s" data-wow-delay="0.8s" class="how-we-works__item wow fadeIn"><span class="how-we-works__item-nomber">3</span><img src="img/how_we_works_picture3.svg" alt=""/><span class="how-we-works__text">Мы заключаем с Вами договор на транспортные услуги</span></li>
             <li data-wow-duration="1s" data-wow-delay="1.2000000000000002s" class="how-we-works__item wow fadeIn"><span class="how-we-works__item-nomber">4</span><img src="img/how_we_works_picture4.svg" alt=""/><span class="how-we-works__text">Мы осуществляем подачу транспорта и доставку Вашего груза</span></li>
             <li data-wow-duration="1s" data-wow-delay="1.6s" class="how-we-works__item wow fadeIn"><span class="how-we-works__item-nomber">5</span><img src="img/how_we_works_picture5.svg" alt=""/><span class="how-we-works__text">Груз доставлен вовремя и Вы остаетесь довольны нашей работой!</span></li>
-          </ul><a href="#" data-wow-delay="2.4s" class="how-we-works__get-button wow bounceIn">Оставить заявку</a>
+          </ul><a href="#" data-wow-duration="2s" data-wow-delay="1.7s" class="how-we-works__get-button wow fadeIn"> <span>Отправить заявку</span></a>
         </div>
       </section>
       <section id="offer" class="we-offer">
@@ -158,7 +175,7 @@
                 <li>Комплектных грузов (в т.ч. опасных) до 20т. автомобилями li тент, рефрижератор.</li>
                 <li>Сборных грузов от 1 паллеты. </li>
                 <li>Транспортно - экспедиторское обслуживание</li>
-              </ul><a href="#" class="type-of-transport__link">Оставить заявку</a>
+              </ul><a href="#" class="type-of-transport__link">Отправить заявку</a>
             </li>
             <li data-wow-duration="2s" class="type-of-transport__item wow zoomIn">
               <h3>МОРСКИЕ ПЕРЕВОЗКИ</h3>
@@ -169,15 +186,15 @@
                 <li>Портовые расходы в порту назначения</li>
                 <li>Перевозка из порта до склада заказчика</li>
                 <li>Информационная поддержка на всех этапах</li>
-              </ul><a href="#" class="type-of-transport__link">Оставить заявку</a>
+              </ul><a href="#" class="type-of-transport__link">Отправить заявку</a>
             </li>
             <li data-wow-duration="2s" class="type-of-transport__item wow zoomIn">
               <h3>Авиаперевозки</h3>
-              <p> Cамый быстрый способ доставки грузов в любой пункт назначения. </p><a href="#" class="type-of-transport__link">Оставить заявку</a>
+              <p> Cамый быстрый способ доставки грузов в любой пункт назначения. </p><a href="#" class="type-of-transport__link">Отправить заявку</a>
             </li>
             <li data-wow-duration="2s" class="type-of-transport__item wow zoomIn">
               <h3>ЖЕЛЕЗНОДОРОЖНЫЕ ПЕРЕВОЗКИ</h3>
-              <p>Контейнера, крытые вагоны, полувагоны, платформы</p><a href="#" class="type-of-transport__link">Оставить заявку</a>
+              <p>Контейнера, крытые вагоны, полувагоны, платформы</p><a href="#" class="type-of-transport__link">Отправить заявку</a>
             </li>
           </ul><span class="type-of-transport__subtext">Ознакомьтесь подробнее с нашими видами транспорта, выбрав одно из направлений</span>
         </div>
@@ -193,7 +210,7 @@
             <input type="text" name="name" placeholder="Имя Фамилия" class="zoomInUp wow"/>
             <input type="email" name="mail" placeholder="Ваш e-mail" class="zoomInUp wow"/>
             <input type="tel" name="phone" placeholder="Контактный телефон" class="zoomInUp wow"/>
-            <button type="submit" class="zoomInDown wow">Оставить заявку</button>
+            <button type="submit" class="zoomInUp wow">Отправить запрос</button>
           </form>
         </div>
       </section>
@@ -210,7 +227,7 @@
             <li class="clients__item fadeInUp wow"><img src="img/client7.png" alt="clients"/></li>
             <li class="clients__item fadeInUp wow"><img src="img/client8.png" alt="clients"/></li>
             <li class="clients__item fadeInUp wow"><img src="img/client9.png" alt="clients"/></li>
-          </ul><a href="#" class="clients__get-button transparent-button">Оставить заявку</a>
+          </ul><a href="#" class="clients__get-button transparent-button">Отправить заявку</a>
         </div>
       </section>
     </main>

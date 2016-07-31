@@ -9,4 +9,17 @@ header.slider
 			p(style="color: red; font-weight: bold;") НАШИ ЦЕНЫ НИЖЕ РЫНОЧНЫХ
 		.slider__price-count
 			span.slider__price-count-text Узнайте стоимость доставки вашего груза!
-			a(href="#").slider__price-count-button Рассчитать
+			a(href="#").slider__price-count-button.popup__show Рассчитать
+	.slider__popup.popup.feedback#sliderPopup
+		.popup__body
+			form(action="#" method="post").slider__form.feedback__form
+				input(type="text" name='from' placeholder="Откуда забрать?")
+				input(type="text" name='to' placeholder="Куда доставить?")
+				input(type="number" name='weight' placeholder="Вес (кг)")
+				input(type="number" name='weight' placeholder="Объем (м2)")
+				input(type="text" name='name' placeholder="Имя Фамилия")
+				input(type="email" name='mail' placeholder="Ваш e-mail")
+				input(type="tel" name='phone' placeholder="Контактный телефон")
+				.popup__buttons
+					button(type="submit") Отправить запрос
+					button(type="reset").popup__close Отмена

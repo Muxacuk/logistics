@@ -1,7 +1,12 @@
 $('.carousel').flickity({
   // options
   cellAlign: 'left',
-  contain: true
+  contain: true,
+  prevNextButtons: false,
+  pageDots: false,
+  autoPlay: 4000,
+  pauseAutoPlayOnHover: false,
+  draggable: false
 });
 (new WOW).init();
 var nav = (function (){
@@ -52,5 +57,24 @@ var nav = (function (){
 
 	return returned;
 })();
+var popup = (function () {
+	var returned = {};
+
+	function addEventListenetrs (){
+		$('.popup__show').on('click touchstart', function (event) {
+			$('#sliderPopup').addClass('slider__popup_active');
+		})
+		$('.popup__close').on('click touchstart', function (event) {
+			$('#sliderPopup').removeClass('slider__popup_active');
+		})
+	}
+	returned.init = function (){
+		addEventListenetrs();
+	}
+	return returned;
+})();
 nav.init();
+popup.init();
+
+
 

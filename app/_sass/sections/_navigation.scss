@@ -13,15 +13,15 @@
 	}
 	&__link{
 		color: #5596BF;
-		font-weight: bold;
-		font-size: 1.175em;
+		font-weight: 300;
+		font-size: 1.15em;
 
 		&:hover{
 			color: $red;
 		}
 	}
 }
-@media only screen and (max-width: 1130px) {
+@media only screen and (max-width: 1150px) {
 
 	.nav__item{
 		font-size: 0.85em;
@@ -34,7 +34,7 @@
 	}
 }
 
-@media only screen and (max-width: 860px){
+@media only screen and (max-width: 875px){
 	.nav{
 		transition: 1s;
 		position: fixed;
