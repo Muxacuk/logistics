@@ -63,9 +63,11 @@ var popup = (function () {
 	function addEventListenetrs (){
 		$('.popup__show').on('click touchstart', function (event) {
 			$('#sliderPopup').addClass('slider__popup_active');
+			event.preventDefault();
 		})
 		$('.popup__close').on('click touchstart', function (event) {
 			$('#sliderPopup').removeClass('slider__popup_active');
+			event.preventDefault();
 		})
 	}
 	returned.init = function (){
